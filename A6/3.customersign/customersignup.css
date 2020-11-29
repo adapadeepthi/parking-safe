@@ -1,0 +1,58 @@
+.details input
+{
+	padding:10px 0;
+	margin-bottom:30px;
+	align:center;
+
+}
+.details input
+{						
+	width:100%;
+	
+}
+.details input[type="text"],input[type="password"],input[type="date"],input[type="number"]
+{
+	border:none;
+	border-bottom:1px solid #999;
+	background:transparent;
+	outline:none;
+	heigth:40px;
+	font-size:16px;
+	
+}
+.details input[type="submit"],.details input[type="reset"]
+{
+	border:none;
+	outline:none;
+	heighe:40px;
+	background:#fb2525;
+	color:#fff;
+	fontsize:18px;
+	border-radius:20px;
+}
+.details input[type="submit"]:hover,.details input[type="reset"]:hover
+{
+	cursor:pointer;
+	color:#000;
+	background:#ffc107;
+}
+#options a,header
+{
+				display:block;
+				color:white;
+				line-height:65px;
+				font-size:19px;
+				padding-left:40px;
+				box-sizing:border-box;
+				border-top:1px solid rgba(255,255,255,.1);
+				border-bottom:1px solid black;
+
+}
+#options
+{	position:fixed;
+				width:250px;
+				height:100%;
+				background-color:#000080;
+				
+}
+

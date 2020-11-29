@@ -1,0 +1,38 @@
+<html>
+<head>
+	<style>
+		h1,u
+		{
+			margin:50% 50% 10% 20%;
+			text-size:50px;
+		}
+	</style>
+	<link rel="stylesheet" href="customersignup.css">
+</head>
+<script>
+function show()
+			{	
+				var click=document.getElementById("options");
+				if(click.style.left=="-250px")
+				{
+					click.style.left="0px";
+				}
+				else
+				{
+					click.style.left="-250px";
+				}
+			}
+</script>
+<form name="sign">
+		<input type=button onclick=show() value="menu" style="border-radius:12px"/>
+		<div id=options style="left:-250px">
+			<a href="http://localhost:8090/GOOGLE_PROJECT/main.php" target="two">home</a>
+			<a href="http://localhost:8090/A6/login/login.html" target="two">login</a>
+			<a href="http://localhost:8090/A6/decide_cust_lord/ask_cust_land.html" target="two">sign up</a>
+		</div>
+</form>
+<body style="background-image:url(background_img.jpg)">
+	<u><i><h1 style="color:white">Safe & Easy Vehicle parking</h1></i></u>
+	
+</body>
+</html>
