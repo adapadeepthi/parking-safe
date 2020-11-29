@@ -8,3 +8,5 @@ step 3: configure database with the database details sql files.
 step 4: run xampp
 
 base url : http://localhost:port/GOOGLE_PROJECT/main.php
+
+AIzaSyDd4luJ2Rmss_dRcZPFqpH5G1XtbV13UvjAok&callback
