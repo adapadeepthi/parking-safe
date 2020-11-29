@@ -39,13 +39,16 @@
 			$vehicle_num=$_POST['vehiclenum'];
 			$from_time=$_POST['fdate'];
 			$to_time=$_POST['tdate'];
-			echo '<div id="time_period">'.$time_period.'</div>';
-			echo'<div id="veh_type">'.$vehicle_type.'</div>';
-			echo'<div id="to">'.$to.'</div>';
-			echo'<div id="from">'.$from.'</div>';
-			echo'<div id="vehicle_num">'.$vehicle_num.'</div>';
-			echo'<div id="from_time">'.$from_time.'</div>';
-			echo'<div id="to_time">'.$to_time.'</div>';
+			echo '<table><tr><th>FROM</th><th>TO</th><th>vehicle num</th><th>vehicle type</th><th>FROM TIME</th><th>TO TIME</th><th>TIME</th></tr>';
+			echo '<tr><td id="from">'.$from.'</td>';
+			echo '<td id="to">'.$to.'</td>';
+			echo '<td id="vehicle_num">'.$vehicle_num.'</td>';
+			echo '<td id="veh_type">'.$vehicle_type.'</td>';
+			echo '<td id="from_time">'.$from_time.'</td>';
+			echo '<td id="to_time">'.$to_time.'</td>';
+			echo '<td id="time_period">'.$time_period.'</td>';
+			echo '</tr></table>';
+
 			require 'education.php';
 			$edu = new education;
 			$edu->location=$area;
@@ -78,6 +81,6 @@ AIzaSyAplGGYH6ymAvq6_m73aE-P-EAyk7GCDvw
 </script>
 -->
 <script 
-     src="https://maps.googleapis.com/maps/api/js?key=?=loadMap">
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd4luJ2Rms_RcZPFqpH5G1XtbV13UvjAo&callback=loadMap">
 </script>
 </html>
