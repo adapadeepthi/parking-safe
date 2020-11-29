@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<title>landlord signup</title>
+		<link rel="stylesheet" href="landlordsignup_style.css">
+		<script src="landlord_signup_script.js"></script>
+		<script>
+			function check()
+			{	
+				var password=document.getElementById("pass").value;
+				var repassword=document.getElementById("repass").value;
+				if((password===repassword))
+				{	
+				//	window.alert('you have signed up')
+					document.getElementById("details").submit();
+					
+				}
+				else
+				{
+					window.alert("password,re-enter password differs");
+					
+				}
+			}
+			function show()
+			{	
+				var click=document.getElementById("options");
+				if(click.style.left=="-250px")
+				{
+					click.style.left="0px";
+				}
+				else
+				{
+					click.style.left="-250px";
+				}
+			}
+		</script>
+	</head>
+	<body>
+
+		<form name="signup">
+		<input type=button onclick=show() value="menu" style="border-radius:12px"/>
+		<div id=options style="left:-250px">
+			<header><h1>Park Easy</h1></header>
+			<a href="http://localhost:8090/GOOGLE_PROJECT/main.php" target="two">home</a>
+			<a href="http://localhost:8090/A6/login/login.html" target="two">login</a>
+			<a href="http://localhost:8090/A6/decide_cust_lord/ask_cust_land.html" target="two">sign up</a>
+			<a href="http://localhost:8090/A6/checking_details/cust_check.php">history</a>
+
+		</div>
+		</form>
+		<fieldset>
+		<legend><h1 style="color:green">Landlord signup</h1></legend>
+		<form action="signup_lord.php" method="post" id="details">
+			<div class="details" >
+				<table align=center cellpadding=6 cellspacing=6>
+					<tr>
+						<th><input type="text" required  name="name" maxlength=30 placeholder="Name" id="name" /></th>
+						<th>       </th>
+					</tr>
+					<tr>
+						<th><input   type="text" required name="email" maxlength=30 placeholder="email" id="email" /></th>
+						<th>       </th>
+					</tr>
+					<tr>
+						<th><input   type=number required name="phn" maxlength=10 placeholder="phone number" id="phn" /></th>
+						<th>       </th>
+					</tr>
+					<tr>
+						<th><input   type=password required name="password" maxlength=15 placeholder="password" id="pass"/></th>
+						<th>       </th>
+					</tr>
+					<tr>
+						<th><input   type=password required name="re-password" maxlength=15 placeholder="re-enter password" id="repass" /></th>
+						<th>       </th>
+					</tr>
+					
+		<tr>
+			<th><textarea rows=5 cols=22 required name="address" placeholder="address"   ></textarea> </th>
+			<th>       </th>
+		</tr>
+		<tr>
+			<th><input   type="text" required name="area" placeholder="area"/></th>
+			<th>       </th>
+		</tr>
+		<tr>
+			<th><input   type="text" required name="landmark"placeholder="landmark" /></th>
+			<th>       </th>
+		</tr>
+		<tr>
+			<th><input   type="text" name="lat" placeholder="latitude of the area"/></th>
+			<th>       </th>
+		</tr>
+		<tr>
+			<th><input   type="text" required name="long" placeholder="longitude of the area"/></th>
+			<th>       </th>
+		</tr>
+		<tr>
+				<th><input   type="number" required name="cost" placeholder="cost per hour"/></th>
+				<th></th>
+			</tr>
+		<tr>
+			
+			<th><input   type="number" required name="space" placeholder="amount of space for bike"/></th>
+			<th>       </th>
+		</tr>
+		<tr>
+		<tr>
+			<th><input  type="button" onclick=check() value="submit" /></th>
+			
+		</tr>
+		<tr>
+			
+			<th><input type="reset" /></th>
+		</tr>
+		
+		</table>
+	</div>
+	</fieldset>
+	</form>
+	</div>
+</body>
+</html>
