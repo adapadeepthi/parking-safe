@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Edit details</title>
+		<style>
+			*
+			{
+				font-size:25px;
+			}
+		</style>
+		
+		<script language="javascript">
+			function enable()
+			{
+				 document.getElementById("name").disabled = false;
+				 document.getElementById("email").disabled = false;
+				 document.getElementById("phn").disabled = false;
+				 document.getElementById("pword").disabled = false;
+				 document.getElementById("cost").disabled = false;
+				 document.getElementById("local_area").disabled = false;
+			}
+			function disable()
+			{
+				 document.getElementById("name").disabled = true;
+				 document.getElementById("email").disabled = true;
+				 document.getElementById("phn").disabled = true;
+				 document.getElementById("pword").disabled = true;
+				  document.getElementById("cost").disabled = true;
+				   document.getElementById("local_area").disabled = true;
+			}
+		</script>
+	</head>
+<body style="font-family:Monotype Corsiva">
+	<input type="button" value="Edit" class="input1" onclick="enable()" />
+	<input type="button" value="save" class="input2" onclick="disable()" />
+<fieldset>
+<div align=right id="level2">
+	<table cellspacing=5 cellpadding=5 align="center" id="details">
+		<tr>
+			<td>Name</td>
+			<td><input type="text" placeholder="updated name" id="name" maxlength=30></td>
+		</tr>
+		<tr>
+			<td>Phone number</td>
+			<td><input type="text" placeholder="updated phone number" id="phn" maxlength=10/></td>
+		</tr>
+		<tr>
+			<td>Previous Password</td>
+			<td><input type="text" placeholder="previous password" id="preword" maxlength=13/></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="text" placeholder="updated password" id="pword" maxlength=13/></td>
+		</tr>
+		<tr>
+			<td>Cost per hour</td>
+			<td><input type="text" id="cost"/>
+		</tr>
+	</table>
+	</div>
+	</fieldset>
+</body>
+</html>

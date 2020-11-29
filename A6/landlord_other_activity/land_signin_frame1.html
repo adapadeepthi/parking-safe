@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Landlordsignin_frame1</title>
+		<script>
+			function show()
+			{	
+				var click=document.getElementById("options");
+				if(click.style.left=="-250px")
+				{
+					click.style.left="0px";
+				}
+				else
+				{
+					click.style.left="-250px";
+				}
+			}
+		</script>
+		<style>
+			#options a,header
+			{
+				display:block;
+				color:white;
+				line-height:65px;
+				font-size:19px;
+				padding-left:40px;
+				box-sizing:border-box;
+				border-top:1px solid rgba(255,255,255,.1);
+				border-bottom:1px solid black;
+
+			}
+			#options
+			{	position:fixed;
+				width:250px;
+				height:100%;
+				background-color:#000080;
+				
+			}
+
+		</style>
+	</head>
+	<body>
+		<input type=button onclick=show() value="menu" style="border-radius:12px"/>
+		<div id=options style="left:-250px">
+			<header><h1>Park Easy</h1></header>
+			<a href="http://localhost:8090/GOOGLE_PROJECT/main.php" target="two">home</a>
+			<a href="http://localhost:8090/A6/login/login.html" target="two">login</a>
+			<a href="http://localhost:8090/A6/decide_cust_lord/ask_cust_land.html" target="two">sign up</a>
+			<a href="http://localhost:8090/A6/checking_details/cust_check.php">history as customer</a>
+
+		</div>
+	</body>
+</html>

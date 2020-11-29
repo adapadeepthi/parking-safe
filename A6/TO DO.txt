@@ -1,0 +1,89 @@
+landlord functionality:
+	1.creating a table
+	
+you have to create a screen for inserting the records into landlords...
+
+CREATE TABLE `landlords` (
+  `id` int(4) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `address` varchar(150) NOT NULL,
+  `landmark` varchar(150) NOT NULL, 
+  `area` varchar(150) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `lat` float(10,6) DEFAULT NULL,
+  `lng` float(10,6) DEFAULT NULL, 
+  `showavailable` int(1), 
+  'amt_space_for_car' int(2),
+  'rem_space_left' int(2) 
+  cost_per_hour int(3)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+2.creating a screen for landlords for inserting parking information:
+
+5.working on google api's
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+3.when the landlord login we need to show 2 tabs a.)showing parking history records  b.)showing current records
+4.updating the landlords table space information as well as availability information.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+Book a space functionality:
+BOOK A SPACE table:
+	we have to create a table to maintain the records of parking bookings.
+	for this purpose we need to design a screen with following fields [
+	id primary key, 
+	name,
+	phonenumber,
+	date,
+	from date,
+	to date[we are going to provide a checkbox field parking only for today if user selects
+	this check box to date will be disabled.],
+	start time,end time,
+	vehicle number,
+	rented_money_time     ->     changes dynamically acording to parking time
+	]
+
+
+parking user:
+
+where would you like to park : DROP DOWN( landlords(table) -> area(column))  hint: Get area data from database
+
+Bussiness logic :
+
+we need to fetch the records from the database that is related to the value selected from dropdown list(to address in the main page)  selected above 
+as well as we need to add a static parameter which should be 1[because we need to fetch the data based on availability of space]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+php  scheduleres to run a job automatically (job=when person book a space the count(labdlords - > amt_space_for_car)
+ decrease eventually (landlords -> rem_space_left increases) ->which is helpful in coounting
+ from-to period of time)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Login functionality:
+
+sign up->[username,password,reenter password(date of birth,place of birth) ,r u a customer or landlord(which is role in database)]
+login->username,password,forget password
+	[forget password screen->username,date of birth,place of birth]
+	
+	user name should not be duplicate(validations should be done at front end.)
+	
+
+
+
+
+
+
+
+
+
+
+
+
+what are schedulers
+
+

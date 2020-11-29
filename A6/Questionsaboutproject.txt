@@ -1,0 +1,34 @@
+Questions from Me:
+----------------------------------------------------
+1.how to insert a calender
+2.how to insert a google map 
+3.how to colabarate with facebook ,email,goolge
+4.dropdown list using button which has to be appear we hover on the button
+5.how to send a mail
+6.how to insert an image on the button
+7.how to sent a message
+8.how to insert an  location symbol to the map
+9.how to set an alarm [the clock  that counts the time period for parking]-------------->based on the customer mode the alarm setting has to be done
+10.extra charges should be fined from the customer[if they have used the space for more time]
+11.before 30min the message has to be popped up in the customere phones[that might be a mssg or a email]
+12.how to fill the data automatically
+================================================================================
+work    for 23-12-2019
+
+deepthi : Main page has to be complete, database (tables required ,connections between tables has to be complete).
+	[question no:1,4,6,3]has to be complete.
+Yoganadam:signup page,login page.
+bhavya:sending mails to customers.
+sriram:work assigned for bhavya.
+==================================================================================================
+1*1px images links
+
+
+youtube:https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico
+search bar:
+
+
+google api key:
+
+
+https://www.youtube.com/watch?v=Zxf1mnP5zcw

@@ -1,0 +1,47 @@
+	b{
+		color:green;
+		font-family:"Monotype Corsiva";
+		}
+	a:hover
+	{
+		color:green;
+	}
+		
+		.button1
+		{	
+			cursor:pointer;
+			background-color:green;
+			color:white;
+			font-size:16px;
+		}
+		.button2
+		{	
+			cursor:pointer;
+			background-color:red;
+			color:white;
+			font-size:16px;
+		}
+		.table2
+		{
+			border:1px solid black;
+		}
+		.cities
+		{
+			z-index:1;
+			position:absolute;
+		}
+		.cities
+		{
+			visibility:hidden;
+		}
+		.city:hover .cities
+		{
+				visibility:visible;
+				color:green;
+		}
+		a
+		{
+			text-decoration:none;
+			color:black;
+		}
+		
